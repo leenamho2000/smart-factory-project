@@ -22,7 +22,7 @@ datasource = glueContext.create_dynamic_frame.from_catalog(
 glueContext.write_dynamic_frame.from_options(
     frame = datasource,
     connection_type = "s3",
-    connection_options = {"path": "s3://namho-datalake-silver-001/"}, # 본인 실버 버킷명
+    connection_options = {"path": "s3://namho-datalake-silver-001/"},
     format = "parquet"
 )
 
